@@ -9,9 +9,9 @@
 <body>
     <div class="cards">
         @foreach($array as $arr)
-        <p>{{$arr->id}}</p>
-        <p>{{$arr->title}}</p>
-        <p>{{$arr->price}}</p>
+        <p>{{$arr["id"]}}</p>
+        <p>{{$arr["title"]}}</p>
+        <p>{{$arr["price"]}}</p>
         @endforeach
     </div>
 </body>
