@@ -36,7 +36,7 @@ class ReportController extends Controller
             'description'=>'string',
         ]);
 
-        $report ->create($data);
+        $report ->update($data);
         return redirect()->back();
     }
 }

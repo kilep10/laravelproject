@@ -11,7 +11,9 @@
             @method('delete')
             @csrf
             <input type="submit" value="Удалить"/>
+            
         </form>
+        <a href="{{route('reports.show', $report->id)}}" style=" text-decoration:underline;">Редактировать</a>
     </div>
     @endforeach
 
@@ -24,6 +26,7 @@
             <div>
                 <textarea type="text" name="description" id="description"  placeholder="ВведитеОписаниеАвто" style="resize: none; font-size: 16px; width:200px; margin-top: 10px;"></textarea>
             </div>
+            
         </div>
         <button type="submit">
             Create

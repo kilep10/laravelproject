@@ -1,7 +1,7 @@
 @extends('layout.main')
 @section('content')
 <div class='container md:mx-auto border m-4'>
-    <form action="{{route('report.update', $report->id)}}" method="POST">
+    <form action="{{route('reports.update', $report->id)}}" method="POST">
         @csrf
         @method('put')
         <div style="font-size: 16px;">
